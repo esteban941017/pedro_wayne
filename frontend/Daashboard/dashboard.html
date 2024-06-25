@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard - Wayne Industries</title>
+    <link rel="stylesheet" href="dashboard.css" />
+    <script src="dashboard.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <div>
+        <a href="/index.html">
+          <img src="wayneLogopng.png" alt="Wayne Industries Logo" />
+        </a>
+      </div>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="#overview">Overview</a></li>
+        <li><a href="#security">Security Management</a></li>
+        <li><a href="#resources">Resource Management</a></li>
+        <li><a href="#activities">Activities</a></li>
+        <li><a href="/index.html">Logout</a></li>
+      </ul>
+    </nav>
+    <main>
+      <section id="overview">
+        <h1>Overview</h1>
+        <p>
+          Wayne Industries é uma das maiores e mais diversificadas corporações
+          do mundo...
+        </p>
+      </section>
+      <section id="security">
+        <h1>Security Management</h1>
+        <p>Aqui você pode gerenciar o acesso às áreas restritas...</p>
+      </section>
+      <section id="resources">
+        <h1>Resource Management</h1>
+        <p>Aqui você pode gerenciar os recursos internos...</p>
+        <form id="resourceForm">
+          <input
+            type="text"
+            id="resourceName"
+            placeholder="Resource Name"
+            required
+          />
+          <input
+            type="text"
+            id="resourceDescription"
+            placeholder="Resource Description"
+            required
+          />
+          <button type="submit">Add Resource</button>
+        </form>
+        <div id="resourceList"></div>
+      </section>
+      <section id="activities">
+        <h1>Activities</h1>
+        <p>Aqui você pode visualizar as atividades recentes...</p>
+      </section>
+    </main>
+  </body>
+</html>
