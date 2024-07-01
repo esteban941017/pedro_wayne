@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function () {
   const role = localStorage.getItem('role');
   if (!role) {
-    window.location.href = 'login.html';
+    // window.location.href = 'login.html';
     return;
   }
 
@@ -26,9 +26,7 @@ document.addEventListener('DOMContentLoaded', function () {
     event.preventDefault();
 
     const resourceName = document.getElementById('resourceName').value;
-    const resourceDescription = document.getElementById(
-      'resourceDescription'
-    ).value;
+    const resourceDescription = document.getElementById('resourceDescription').value;
 
     addResource(resourceName, resourceDescription);
     resourceForm.reset();
